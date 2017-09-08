@@ -36,8 +36,8 @@ class Anagram
   end
 
   def antigram_check
-    @word1 = @word1.downcase.gsub(/[^a-z]\s+/, "")
-    @word2 = @word2.downcase.gsub(/[^a-z]\s+/, "")
+    @word1 = @word1.downcase.gsub(/[^a-z]/, "")
+    @word2 = @word2.downcase.gsub(/[^a-z]/, "")
     @word1 = @word1.split("")
     @word2 = @word2.split("")
     similars = @word1 & @word2

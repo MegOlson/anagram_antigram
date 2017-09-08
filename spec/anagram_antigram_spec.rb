@@ -38,4 +38,8 @@ require('anagram_antigram')
       anagram = Anagram.new("car has", "a crash")
       expect(anagram.anagram_check).to(eq("Anagrams!"))
     end
+    it("checks if two non-anagram phrases are antigrams") do
+      anagram = Anagram.new("I saw", "You there")
+      expect(anagram.antigram_check).to(eq("Antigrams!"))
+    end
   end
