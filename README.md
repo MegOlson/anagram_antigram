@@ -31,6 +31,9 @@ _This program will identify if two given words are anagrams, palindromes, or ant
 * Program will check if two words are antigrams.
   * Example Input: "hi" "bye"
   * Example Output: "These are antigrams"
+* Program will check if two phrases are angrams or antigrams.
+  * Example Input: "I saw" "you there"
+  * Example Output: "These are antigrams"
 
 
 ## Known Bugs
