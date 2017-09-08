@@ -61,9 +61,17 @@ class Anagram
 end
 
 #### User Interface ######
-
-puts "Please enter a word or phrase"
-user_input1 = gets.chomp
-puts "Please enter another word or phrase"
-user_input2 = gets.chomp
-Anagram.new(user_input1, user_input2)
+# user_input1 = ""
+# user_input2 = ""
+# until(user_input1 == "exit" || user_input2 == "exit") do
+  puts "Please enter a word or phrase"
+  user_input1 = gets.chomp
+  puts "Please enter another word or phrase"
+  user_input2 = gets.chomp
+  Anagram.new(user_input1, user_input2)
+#   if user_input1 == "exit" || user_input2 == "exit"
+#     break
+#   else
+#     Anagram.new(user_input1, user_input2)
+#   end
+# end
