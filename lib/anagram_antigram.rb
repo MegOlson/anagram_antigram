@@ -1,8 +1,8 @@
 # class Anagram
   public def anagram_check(word1, word2)
-    word1.size == word2.size && word1.delete(word2).empty?
+    result = word1.size == word2.size && word1.delete(word2).empty?
 
-    if true
+    if result == true
       return "These words are anagrams"
     else
       return "These words are not anagrams"
