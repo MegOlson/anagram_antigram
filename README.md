@@ -16,6 +16,9 @@ _This program will identify if two given words are anagrams, palindromes, or ant
 
 ## Specifications
 
+* Program will check if two words both legitimate words.
+  * Example Input: "nsdkm" "mdws"
+  * Example Output: "These are not valid words"
 * Program will check if two words are anagrams.
   * Example Input: "ruby" "bury"
   * Example Output: "These words are anagrams"
@@ -25,16 +28,12 @@ _This program will identify if two given words are anagrams, palindromes, or ant
 * Program will passed anagrams to see if they are palindromes.
   * Example Input: "Nana" "Naan"
   * Example Output: "These words are anagrams and palindromes"
-* Program will check if two words both legitimate words.
-  * Example Input: "nsdkm" "mdws"
-  * Example Output: "These are not valid words"
 * Program will check if two words are antigrams.
   * Example Input: "hi" "bye"
   * Example Output: "These are antigrams"
 * Program will check if two phrases are angrams or antigrams.
   * Example Input: "I saw" "you there"
   * Example Output: "These are antigrams"
-
 
 ## Known Bugs
 
