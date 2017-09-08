@@ -33,8 +33,6 @@ _This program will identify if two given words are anagrams, palindromes, or ant
   * Example Output: "These are antigrams"
 
 
-
-
 ## Known Bugs
 
 _There are no known bugs at this time._
