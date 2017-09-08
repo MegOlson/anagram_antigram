@@ -6,7 +6,7 @@
 
 ## Description
 
-_This program will identify if two given words are anagrams, palindromes, or antigrams and do the same for a phrase._
+_This program will identify if two given words or phrases are anagrams, palindromes, or antigrams and do the same for a phrase._
 
 ## Setup/Installation Requirements
 
@@ -53,7 +53,7 @@ Contributors END -->
 <!-- Contributors table START -->
 | <img src="https://avatars.githubusercontent.com/MegOlson?s=100" width="100" alt="Megan Olson" /><br />[<sub>Megan Olson</sub>](https://github.com/MegOlson)<br />[💻](https://github.com/ElreyB/epic-goose/commits?author=MegOlson) [📖](https://github.com/ElreyB/epic-goose/commits?author=MegOlson) [⚠️](https://github.com/ElreyB/epic-goose/commits?author=MegOlson) 🎨 |
 | :---: | :---: | :---: |
-<!-- Contributors table END -->
+<!-- Contributors table END -->git
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
 
 ### License

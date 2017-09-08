@@ -2,10 +2,11 @@ class Anagram
   def initialize(word1, word2)
     @word1 = word1
     @word2 = word2
-    word_check
+    word_check   ##calls first method
   end
 
   def word_check
+    ##Checks if input are legitimate words by looking for vowels##
     if @word1 =~ /[aeiouy]/i && @word2 =~ /[aeiouy]/i
       anagram_check
     else
@@ -15,6 +16,7 @@ class Anagram
   end
 
   def anagram_check
+    ##Checks if user inputs are anagrams ##
     @word1 = @word1.downcase.gsub(/[^a-z]\s+/, "")
     @word2 = @word2.downcase.gsub(/[^a-z]\s+/, "")
     result = @word1.size == @word2.size && @word1.delete(@word2).empty?
@@ -29,6 +31,7 @@ class Anagram
   end
 
   def palindrome_check
+    ##Checks anagrams passed down from previous method to see if they're palindromes as well##
     @word1 = @word1.downcase.gsub(/[^a-z]\s+/, "")
     @word2 = @word2.downcase.gsub(/[^a-z]\s+/, "")
     if @word1 == @word1.reverse || @word2 == @word2.reverse
@@ -41,6 +44,7 @@ class Anagram
   end
 
   def antigram_check
+    ##Checks non-anagrams to see if they're antigrams (no charing letters)##
     @word1 = @word1.downcase.gsub(/[^a-z]/, "")
     @word2 = @word2.downcase.gsub(/[^a-z]/, "")
     @word1 = @word1.split("")
@@ -55,6 +59,8 @@ class Anagram
     end
   end
 end
+
+#### User Interface ######
 
 puts "Please enter a word or phrase"
 user_input1 = gets.chomp
