@@ -8,30 +8,34 @@ require('anagram_antigram')
     end
     it("checks if two words are anagrams") do
       anagram = Anagram.new("ruby", "bury")
-      expect(anagram.anagram_check).to(eq("These words are anagrams"))
+      expect(anagram.anagram_check).to(eq("Anagrams!"))
     end
     it("checks if two words are anagrams") do
       anagram = Anagram.new("hello", "hi")
-      expect(anagram.anagram_check).to(eq("These words are not anagrams"))
+      expect(anagram.anagram_check).to(eq("Not anagrams."))
     end
     it("checks if two words are anagrams despite case") do
       anagram = Anagram.new("Tea", "Eat")
-      expect(anagram.anagram_check).to(eq("These words are anagrams"))
+      expect(anagram.anagram_check).to(eq("Anagrams!"))
     end
     it("checks if anagrams are also palindromes") do
       anagram = Anagram.new("Nana", "Anna")
-      expect(anagram.palindrome_check).to(eq("These words are anagrams and palindromes"))
+      expect(anagram.palindrome_check).to(eq("Anagrams and palindromes!"))
     end
     it("checks if anagrams are also palindromes") do
       anagram = Anagram.new("nap", "pan")
-      expect(anagram.palindrome_check).to(eq("These words are only anagrams"))
+      expect(anagram.palindrome_check).to(eq("Only anagrams."))
     end
     it("checks if non-anagrams are antigrams") do
       anagram = Anagram.new("hi", "bye")
-      expect(anagram.antigram_check).to(eq("These words are antigrams"))
+      expect(anagram.antigram_check).to(eq("Antigrams!"))
     end
     it("checks if non-anagrams are antigrams") do
       anagram = Anagram.new("below", "bye")
-      expect(anagram.antigram_check).to(eq("These words are not antigrams"))
+      expect(anagram.antigram_check).to(eq("Not antigrams."))
+    end
+    it("checks if two phrases are anagrams") do
+      anagram = Anagram.new("car has", "a crash")
+      expect(anagram.anagram_check).to(eq("Anagrams!"))
     end
   end
