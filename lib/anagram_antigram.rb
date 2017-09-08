@@ -21,6 +21,7 @@ class Anagram
       palindrome_check
     else
       return "These words are not anagrams"
+      antigram_check
     end
   end
 
@@ -31,6 +32,17 @@ class Anagram
       return "These words are anagrams and palindromes"
     else
       return "These words are only anagrams"
+    end
+  end
+
+  def antigram_check
+    @word1 = @word1.split("")
+    @word2 = @word2.split("")
+    similars = @word1 & @word2
+    if similars == []
+      return "These words are antigrams"
+    else
+      return "These words are not antigrams"
     end
   end
 end

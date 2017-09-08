@@ -26,4 +26,12 @@ require('anagram_antigram')
       anagram = Anagram.new("nap", "pan")
       expect(anagram.palindrome_check).to(eq("These words are only anagrams"))
     end
+    it("checks if non-anagrams are antigrams") do
+      anagram = Anagram.new("hi", "bye")
+      expect(anagram.antigram_check).to(eq("These words are antigrams"))
+    end
+    it("checks if non-anagrams are antigrams") do
+      anagram = Anagram.new("below", "bye")
+      expect(anagram.antigram_check).to(eq("These words are not antigrams"))
+    end
   end
