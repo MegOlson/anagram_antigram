@@ -47,6 +47,15 @@ _Feel free to email Megan at meganannetteolson@yahoo.com_
 
 _HTML CSS Ruby_
 
+<!-- Contributors START
+Megan_Olson MegOlson https://github.com/MegOlson code doc tests design
+Contributors END -->
+<!-- Contributors table START -->
+| <img src="https://avatars.githubusercontent.com/MegOlson?s=100" width="100" alt="Megan Olson" /><br />[<sub>Megan Olson</sub>](https://github.com/MegOlson)<br />[💻](https://github.com/ElreyB/epic-goose/commits?author=MegOlson) [📖](https://github.com/ElreyB/epic-goose/commits?author=MegOlson) [⚠️](https://github.com/ElreyB/epic-goose/commits?author=MegOlson) 🎨 |
+| :---: | :---: | :---: |
+<!-- Contributors table END -->
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
+
 ### License
 
 *This software is licensed under the MIT license*
