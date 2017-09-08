@@ -2,6 +2,10 @@ require('rspec')
 require('anagram_antigram')
 
   describe('Anagram#anagram_check') do
+    it("checks if word is a legitimate word") do
+      anagram = Anagram.new("nqwrs", "dog")
+      expect(anagram.word_check).to(eq("Please enter legitimate words!"))
+    end
     it("checks if two words are anagrams") do
       anagram = Anagram.new("ruby", "bury")
       expect(anagram.anagram_check).to(eq("These words are anagrams"))

@@ -3,6 +3,15 @@ class Anagram
     @word1 = word1
     @word2 = word2
   end
+
+  def word_check
+    if @word1 =~ /[aeiouy]/i && @word2 =~ /[aeiouy]/i
+      anagram_check
+    else
+      return "Please enter legitimate words!"
+    end
+  end
+
   def anagram_check
     @word1 = @word1.downcase
     @word2 = @word2.downcase
